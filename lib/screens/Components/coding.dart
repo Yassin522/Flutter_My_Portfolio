@@ -27,7 +27,7 @@ class Coding extends StatelessWidget {
         ),
         AnimatedLinearProgressIndicator(
           precentage: 0.5,
-          label: "HTML",
+          label: "Dart",
         ),
         AnimatedLinearProgressIndicator(
           precentage: 0.5,

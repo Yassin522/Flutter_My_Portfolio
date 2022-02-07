@@ -1,5 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:my_profile/constants.dart';
 import 'package:my_profile/screens/main/main_screen.dart';
+import 'package:my_profile/sections/about/about_section.dart';
+import 'package:my_profile/sections/contact/contact_section.dart';
+import 'package:my_profile/sections/feedback/feedback_section.dart';
+import 'package:my_profile/sections/recent_work/recent_work_section.dart';
+import 'package:my_profile/sections/service/service_section.dart';
 import 'components/heightlights.dart';
 import 'components/home_banner.dart';
 import 'components/my_projects.dart';
@@ -14,8 +20,14 @@ class HomeScreen extends StatelessWidget {
       children: [
         HomeBanner(),
         HighLightInfo(),
-        MyProjects(),
-        Recommendations(),
+        // MyProjects(),
+        //  Recommendations(),
+        SizedBox(height: kDefaultPadding * 2),
+        AboutSection(),
+        ServiceSection(),
+        RecentWorkSection(),
+        FeedbackSection(),
+        ContactSection(),
       ],
     );
   }

@@ -31,7 +31,7 @@ class Knowledges extends StatelessWidget {
           text: "Git , Github",
         ),
         KnowledgeText(
-          text: "Unity, C#",
+          text: "Ui/Ux Design",
         ),
       ],
     );

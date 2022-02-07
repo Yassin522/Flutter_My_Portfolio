@@ -3,11 +3,16 @@ import 'package:my_profile/constants.dart';
 import 'package:my_profile/responsive.dart';
 import 'package:my_profile/screens/Components/side_menue.dart';
 
-class MainScreen extends StatelessWidget {
+class MainScreen extends StatefulWidget {
   const MainScreen({Key? key, required this.children}) : super(key: key);
 
   final List<Widget> children;
 
+  @override
+  State<MainScreen> createState() => _MainScreenState();
+}
+
+class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +44,7 @@ class MainScreen extends StatelessWidget {
                 child: SingleChildScrollView(
                   child: Column(
                     children: [
-                      ...children,
+                      ...widget.children,
                     ],
                   ),
                 ),

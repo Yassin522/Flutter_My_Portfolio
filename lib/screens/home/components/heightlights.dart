@@ -22,17 +22,17 @@ class HighLightInfo extends StatelessWidget {
                   children: [
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 697,
+                        value: 281,
                         text: "+",
                       ),
-                      label: "instagram",
+                      label: "Linkedin",
                     ),
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 10,
+                        value: 40,
                         text: "+",
                       ),
-                      label: "Dribble",
+                      label: "Behance",
                     ),
                   ],
                 ),
@@ -42,17 +42,17 @@ class HighLightInfo extends StatelessWidget {
                   children: [
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 1,
+                        value: 2,
                         text: "+",
                       ),
                       label: "Github Projects",
                     ),
                     HeightLight(
                       counter: AnimatedCounter(
-                        value: 81,
+                        value: 800,
                         text: "+",
                       ),
-                      label: "Linkedin",
+                      label: "instagram",
                     ),
                   ],
                 )
@@ -63,31 +63,31 @@ class HighLightInfo extends StatelessWidget {
               children: [
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 697,
+                    value: 281,
                     text: "+",
                   ),
-                  label: "instagram",
+                  label: "Linkedin",
                 ),
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 10,
+                    value: 40,
                     text: "+",
                   ),
-                  label: "Dribble",
+                  label: "Behance",
                 ),
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 1,
+                    value: 3,
                     text: "+",
                   ),
                   label: "Github Projects",
                 ),
                 HeightLight(
                   counter: AnimatedCounter(
-                    value: 81,
+                    value: 800,
                     text: "+",
                   ),
-                  label: "Linkedin",
+                  label: "instagram",
                 ),
               ],
             ),
