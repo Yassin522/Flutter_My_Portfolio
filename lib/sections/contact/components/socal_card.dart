@@ -1,0 +1,62 @@
+import 'package:flutter/material.dart';
+
+import '../../../constants.dart';
+
+class SocalCard extends StatefulWidget {
+  const SocalCard({
+    required this.iconSrc,
+    required this.name,
+    required this.color,
+    required this.press,
+  });
+
+  final String iconSrc, name;
+  final Color color;
+  final Function press;
+
+  @override
+  _SocalCardState createState() => _SocalCardState(
+     
+  );
+}
+
+class _SocalCardState extends State<SocalCard> {
+  bool isHover = false;
+  @override
+  Widget build(BuildContext context) {
+    return FittedBox(
+      child: InkWell(
+       
+        onHover: (value) {
+          setState(() {
+            isHover = value;
+          });
+        },
+
+        child: AnimatedContainer(
+          duration: Duration(milliseconds: 200),
+          padding: EdgeInsets.symmetric(
+            vertical: 8,
+            horizontal: 8,
+          ),
+          decoration: BoxDecoration(
+            color: widget.color,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [if (isHover) kDefaultCardShadow],
+          ),
+          child: Row(
+            children: [
+              Image.asset(
+                widget.iconSrc,
+                height: 25,
+                width: 25,
+              ),
+              SizedBox(width: 5),
+              Text(widget.name),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
